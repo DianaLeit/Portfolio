@@ -2,6 +2,11 @@ body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
 }
+
+.hidden {
+    display: none;
+}
+
 section {
     background-color: white;
 }
@@ -175,6 +180,10 @@ a {
     outline: 0;
 }
 
+.catpaw:hover {
+    background-color: #7ca4ee;
+}
+
 
 @media only screen and (max-width: 1000px) {
     .catpaw {
@@ -206,4 +215,117 @@ a {
     .logo {
             display: none;
         }
+}
+
+.social-fan {
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.social-fan .social {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: top right;
+    z-index: 10;
+}
+
+.social-fan:hover .email {
+    display: block;
+    animation: fanEmail 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes fanEmail {
+    0% {
+        transform: translateY(0);
+        right: 0;
+        top: 0;
+    }
+    100% {
+            transform: translateY(40px);
+            right: 0;
+            top: 0;
+        }
+}
+.social-fan:hover .linkedin {
+    display: block;
+    animation: fanLinkedin 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fanLinkedin {
+    0% {
+        transform: translateY(0);
+        right: 0;
+        top: 0;
+    }
+
+    100% {
+        transform: translateY(75px);
+        right: 0;
+        top: 0;
+    }
+}
+
+.hidden-pill {
+    height: 30px;
+    width: 325px;
+    align-items: start;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1000px) {
+    .social-fan .social {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top left;
+            z-index: 10;
+        }
+    .social-fan:hover .email {
+                    display: block;
+                    animation: fanEmail 1s ease-in-out;
+                    animation-fill-mode: forwards;
+        }
+        
+    @keyframes fanEmail {
+        0% {
+                        transform: translateY(0);
+                        right: 0;
+                        top: 0;
+        }
+        
+        100% {
+                        transform: translateY(25px);
+                        right: 0;
+                        top: 0;
+        }
+    }
+        
+    .social-fan:hover .linkedin {
+                    display: block;
+                    animation: fanLinkedin 1s ease-in-out;
+                    animation-fill-mode: forwards;
+    }
+        
+     @keyframes fanLinkedin {
+        0% {
+                        transform: translateY(0);
+                        right: 0;
+                        top: 0;
+        }
+        
+        100% {
+                        transform: translateY(60px);
+                        right: 0;
+                        top: 0;
+        }
+    }
+
+    .hidden-pill {
+        height: 40px;
+        width: 325px;
+        align-items: start;
+        text-align: left;
+    }
 }
