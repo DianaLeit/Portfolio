@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/e657ae35f6.js" crossorigin="anonymous"></script>
-    <title>Diana Voronova Portfolio</title>
+    <title>Age In Days Calculator</title>
     <meta charset="UTF-8" />
   </head>
   <body>
@@ -18,8 +18,8 @@
       <nav>
         <img class="logo" src="src/images/di-logo.png" alt="Diana Voronova`s logo" />
         <ul id="navList">
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="index.html#about-me">About me</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
           <li class="social-fan">
             <a href="#contact-me">Contact me</a>
             <div class="hidden-pill social email hidden">
@@ -36,9 +36,38 @@
       </nav>
       <div class="hero-area">
         <div class="hero-text">
-          <h1>Diana Voronova</h1>
-          <p>Junior QA Engineer</p>
-          <div class="button"><a href="#about-me">About me</a></div>
+          <h2>Age In Days Calculator</h2>
+        </div>
+        <div class="container">
+          <div class="calculator-box">
+            <form>
+              <h5>Choose your date of birth to count days of your life:</h5>
+              <input
+                class="date"
+                type="date"
+                name="dateOfBirth"
+                id="dateOfBirth"
+                onchange="ageInDays()"
+                data-test="date-input"
+              />
+            </form>
+            <!-- <form> -->
+
+            <h6>
+              You are
+              <output type="number" name="result" id="result" for="dateOfBirth" data-test="result">0</output>
+              days old
+            </h6>
+
+            <!-- </form> -->
+          </div>
+          <div class="description-box">
+            <p>
+              I've made this as my first project for learning Javascript. Without tutorials, just implementing what I
+              knew. It was 160 lines of code at first. Then after learning more I remade it to 40 lines of efficient
+              code. <br />#arrays #objects #datePrototype
+            </p>
+          </div>
         </div>
         <div class="socials">
           <div>
@@ -71,71 +100,13 @@
         </div>
       </div>
     </section>
-    <section class="sub-section" id="about-me">
-      <div class="information">
-        <h2>About Me</h2>
-        <p>
-          Hello. My name is Diana Voronova. I am a <b>Junior QA Engineer</b> with a passion to testing and programming.
-          I have a solid understanding of <b>Cypress</b>, <b>Postman</b>, <b>Playwright</b> and <b>JavaScript</b>,
-          seeking an opportunity to kickstart a successful career in software quality assurance. While I may lack
-          industry experience, I'm open to <b>challenge</b> and growth, I have a true <b>passion</b> for testing and
-          programming (I started to contribute to <b>Github</b> while I was learning and I plan to add more). I'm a
-          quick learner and understand things fast and on a deep level. I know how to find solutions, write scripts for
-          <b>automated tests</b>, and to use testing methodologies. I have a high empathy which is beneficial for
-          understanding user behavior and scenarios. I also posses knowledge of <b>SOAP/REST API</b>, <b>JSON</b>,
-          <b>XML</b>, <b>Mocha</b> and <b>Chai</b> frameworks.
-        </p>
-      </div>
-      <div class="headshot-container">
-        <img class="headshot" src="src/images/prof.png" alt="Diana Voronova headshot" />
-      </div>
-    </section>
-    <section class="sub-section-alt" id="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-        <div class="project-card">
-          <img class="project-image" src="src/images/UITAPsquare.png" alt="Project One Image" />
-          <h3>UITAP</h3>
-          <p class="subtext">
-            My Cypress solutions for
-            <a class="project-link" href="http://uitestingplayground.com">UI Test Automation Playground</a> on Github
-            repository.
-          </p>
-          <hr />
-          <p class="subtext"><a class="project-link" href="https://github.com/DianaLeit/UITAP">View here</a></p>
-        </div>
-        <div class="project-card">
-          <img class="project-image" src="src/images/AgeInDaysCalc.PNG" alt="Project Two Image" />
-          <h3>Age In Days Calculator</h3>
-          <p class="subtext">
-            Counts how old you are based on date of birth. It's my first project on which I've learned basic JS concepts
-          </p>
-          <hr />
-          <p class="subtext"><a class="project-link" href="age-in-days.html">View here</a></p>
-        </div>
-        <!-- <div class="project-card">
-          <img class="project-image" src="" alt="Project One Image" />
-          <h3>Project Three</h3>
-          <p class="subtext">blablablablablablablablablabla</p>
-          <hr />
-          <p class="subtext"><a class="project-link" href="">View here</a></p>
-        </div>
-        <div class="project-card">
-          <img class="project-image" src="" alt="Project One Image" />
-          <h3>Project Four</h3>
-          <p class="subtext">blablablablablablablablablabla</p>
-          <hr />
-          <p class="subtext"><a class="project-link" href="">View here</a></p>
-        </div> -->
-      </div>
-    </section>
     <footer id="contact-me">
       <h2>Contact me</h2>
       <p><a class="project-link" href="mailto:hanwi1994@gmail.com">hanwi1994@gmail.com</a></p>
       <p><a class="project-link" href="https://www.linkedin.com/in/diana-voronova/">LinkedIn</a></p>
       <div id="github" class="github-button">
         <button class="btn">
-          <a href="https://github.com/DianaLeit/Portfolio">
+          <a href="https://github.com/DianaLeit/My-Age-in-Days">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -159,5 +130,6 @@
       </div>
     </footer>
     <script src="src/app.js"></script>
+    <script src="src/MyAgeInDays.js"></script>
   </body>
 </html>

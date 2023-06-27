@@ -16,13 +16,14 @@ section {
     height: 100vh;
     color: white;
     font-size: 40px;
+
 }
 
 footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
 }
 
 nav {
@@ -36,16 +37,16 @@ ul {
     width: 500px;
     justify-content: space-around;
     font-size: 30px;
-    }
+}
 
 li {
     text-decoration: none;
-    }
+}
 
 h1 {
     font-size: 90px;
     margin: 0;
-}  
+}
 
 h2 {
     font-size: 50px;
@@ -93,7 +94,7 @@ p {
 
 .button:active {
     background-color: #7464ed;
-    color:#2e2474
+    color: #2e2474
 }
 
 .socials {
@@ -101,8 +102,8 @@ p {
 }
 
 .logo {
-    height: 80px;
-    margin: 30px;
+    height: 60px;
+    margin: 15px;
 }
 
 .social {
@@ -139,6 +140,7 @@ p {
     box-shadow: 5px 5px 20px #979797;
     margin: 10px;
 }
+
 .project-container {
     display: flex;
     justify-content: space-around;
@@ -158,8 +160,8 @@ p {
 }
 
 hr {
-   margin-left: 20px;
-   margin-right: 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .project-link {
@@ -198,24 +200,24 @@ a {
     }
 
     ul {
-            display: none;
-            background-color: #2b2c38;
-            margin: 0px;
+        display: none;
+        background-color: #2b2c38;
+        margin: 0px;
     }
-    
+
     ul.show {
-            display: block;
+        display: block;
     }
-    
+
     nav {
-            display: flex;
-            flex-direction: column-reverse;
-            background-color: #2b2c38;
-        }
-    
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
     .logo {
-            display: none;
-        }
+        display: none;
+    }
 }
 
 .social-fan {
@@ -236,18 +238,21 @@ a {
     animation: fanEmail 1s ease-in-out;
     animation-fill-mode: forwards;
 }
+
 @keyframes fanEmail {
     0% {
         transform: translateY(0);
         right: 0;
         top: 0;
     }
+
     100% {
-            transform: translateY(40px);
-            right: 0;
-            top: 0;
-        }
+        transform: translateY(27px);
+        right: 0;
+        top: 0;
+    }
 }
+
 .social-fan:hover .linkedin {
     display: block;
     animation: fanLinkedin 1s ease-in-out;
@@ -262,14 +267,14 @@ a {
     }
 
     100% {
-        transform: translateY(75px);
+        transform: translateY(60px);
         right: 0;
         top: 0;
     }
 }
 
 .hidden-pill {
-    height: 30px;
+    height: 40px;
     width: 325px;
     align-items: start;
     text-align: right;
@@ -277,49 +282,50 @@ a {
 
 @media only screen and (max-width: 1000px) {
     .social-fan .social {
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform-origin: top left;
-            z-index: 10;
-        }
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: top left;
+        z-index: 10;
+    }
+
     .social-fan:hover .email {
-                    display: block;
-                    animation: fanEmail 1s ease-in-out;
-                    animation-fill-mode: forwards;
-        }
-        
+        display: block;
+        animation: fanEmail 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
     @keyframes fanEmail {
         0% {
-                        transform: translateY(0);
-                        right: 0;
-                        top: 0;
+            transform: translateY(0);
+            right: 0;
+            top: 0;
         }
-        
+
         100% {
-                        transform: translateY(25px);
-                        right: 0;
-                        top: 0;
+            transform: translateY(25px);
+            right: 0;
+            top: 0;
         }
     }
-        
+
     .social-fan:hover .linkedin {
-                    display: block;
-                    animation: fanLinkedin 1s ease-in-out;
-                    animation-fill-mode: forwards;
+        display: block;
+        animation: fanLinkedin 1s ease-in-out;
+        animation-fill-mode: forwards;
     }
-        
-     @keyframes fanLinkedin {
+
+    @keyframes fanLinkedin {
         0% {
-                        transform: translateY(0);
-                        right: 0;
-                        top: 0;
+            transform: translateY(0);
+            right: 0;
+            top: 0;
         }
-        
+
         100% {
-                        transform: translateY(60px);
-                        right: 0;
-                        top: 0;
+            transform: translateY(60px);
+            right: 0;
+            top: 0;
         }
     }
 
@@ -350,4 +356,55 @@ a {
 .license {
     padding-top: 10px;
     margin-bottom: -25px;
+}
+
+/* Age in Days Project */
+.container {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.calculator-box {
+    width: 700px;
+    /* height: 250px; */
+    border-radius: 25px;
+    background: linear-gradient(135deg, #6495ed, #8da4ee);
+    /* padding: 10px; */
+
+}
+
+/* .calculator-box > * {
+    margin: 20px;
+} */
+
+.description-box {
+    width: 700px;
+    padding: 10px;
+}
+
+.date {
+    /* margin-bottom: 40px; */
+    /* margin-inline-start: 10px; */
+    border-radius: 0.25em;
+    border: 4px solid #4e85eb;
+    text-align: center;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+h5 {
+    margin-left: 20px;
+}
+
+h6 {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
 }
