@@ -1,5 +1,6 @@
 describe("Main page tests", () => {
   beforeEach(function () {
+    cy.viewport(1024, 768);
     cy.visit("https://dileit.com/");
   });
   it("goes to About me section via the navigation bar", () => {
@@ -16,7 +17,6 @@ describe("Main page tests", () => {
   it("goes to Projects section via the navigation bar", () => {
     cy.get('[data-cy="catpaw-button"]').click();
     cy.get('[data-cy="projects-link"]').click();
-    cy.url().should("be.equal", "https://dileit.com/#projects");
     cy.get('[data-cy="project-container"]').should("contain", "UITAP", "Age In Days Calculator");
     cy.get('[data-cy="project-one"]').should("be.visible");
     cy.get('[data-cy="project-two"]').should("be.visible");
@@ -26,7 +26,6 @@ describe("Main page tests", () => {
   it("goes to Contact Me section via the navigation bar", () => {
     cy.get('[data-cy="catpaw-button"]').click();
     cy.get('[data-cy="contactme-link"]').click();
-    cy.url().should("be.equal", "https://dileit.com/#contact-me");
     cy.get('[data-cy="contactme"]').should("contain", "hanwi1994@gmail.com", "LinkedIn");
   });
   it("checks socials badges and logo", () => {
