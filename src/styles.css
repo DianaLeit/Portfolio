@@ -151,6 +151,32 @@ p {
         display: flex;
         flex-wrap: wrap;
     }
+    .project-image {
+        margin: 5px;
+    }
+    .sub-section {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        padding: 40px;
+    }
+    .headshot {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .hero-text {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 5px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-size: 20px;
+    }
+    
 }
 
 .project-image {
@@ -167,6 +193,14 @@ hr {
 .project-link {
     text-decoration: none;
     color: #7ca4ee;
+}
+
+.framework-icons {
+    width: 30px;
+    margin-top: 10px;
+}
+.js {
+    margin-bottom: -2px;
 }
 
 a {
