@@ -177,7 +177,7 @@ p {
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
     .hero-text {
     display: flex;
     flex-wrap: wrap;
