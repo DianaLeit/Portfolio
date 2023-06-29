@@ -2,7 +2,6 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    // baseUrl: "https://dileit.com",
-    // baseUrl: "./index.html",
+    baseUrl: "https://dileit.com",
   },
 });

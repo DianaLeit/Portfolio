@@ -1,16 +1,16 @@
 describe("Main page tests", () => {
   beforeEach(function () {
     cy.viewport(1024, 768);
-    cy.visit("./index.html");
+    cy.visit("/");
   });
   it("goes to About me section via the navigation bar", () => {
     cy.get('[data-cy="about-link"]').click();
-    // cy.url().should("be.equal", "/#about-me");
+    cy.url().should("be.equal", "https://dileit.com/#about-me");
     cy.get("#about-me").should("contain", "Hello. My name is Diana Voronova");
   });
   it("goes to About me section via the button", () => {
     cy.get('[data-cy="about-button"]').click();
-    // cy.url().should("be.equal", "https://dileit.com/#about-me");
+    cy.url().should("be.equal", "https://dileit.com/#about-me");
     cy.get("#about-me").should("contain", "Hello. My name is Diana Voronova");
   });
   it("goes to Projects section via the navigation bar", () => {

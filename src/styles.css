@@ -59,13 +59,14 @@ p {
 }
 
 .subtext {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
     margin: 5px;
 }
 
 .hero-area {
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
     justify-content: space-between;
     align-items: center;
@@ -115,6 +116,9 @@ p {
     justify-content: space-around;
     padding: 80px;
 }
+.sub-section p {
+    font-size: 25px;
+}
 
 .sub-section-alt {
     display: flex;
@@ -122,6 +126,8 @@ p {
     text-align: center;
     padding: 80px;
 }
+
+
 
 .headshot {
     width: 300px;
@@ -137,7 +143,7 @@ p {
 
 .project-card {
     width: 300px;
-    height: 500px;
+    height: 550px;
     box-shadow: 5px 5px 20px #979797;
     margin: 10px;
 }
@@ -177,20 +183,43 @@ p {
 
 }
 
+@media only screen and (max-width: 815px) {
+    .socials {
+        display: flex;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 465px) {
+    h1 {
+        font-size: 60px;
+    }
+    .sub-section p {
+        font-size: 20px;
+    }
+    .subtext {
+        font-size: 15px;
+        font-weight: 300;
+        margin: 5px;
+    }
+    .project-card {
+        height: 500px;
+    }
+}
 @media only screen and (max-width: 376px) {
     .hero-text {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         /* margin-left: 5px; */
-}
-h1 {
-    font-size: 50px;
-}
-    
-p {
-    font-size: 20px;
-}
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    .sub-section p {
+        font-size: 15px;
+        }
 }
 
 .project-image {

@@ -1,6 +1,6 @@
 describe("Main page tests", () => {
   beforeEach(function () {
-    cy.visit("https://dileit.com/");
+    cy.visit("/");
   });
   it("goes to About me section via the navigation bar", () => {
     cy.get('[data-cy="catpaw-button"]').click();
