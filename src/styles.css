@@ -175,15 +175,49 @@ p {
         margin-top: 20px;
     }
 
-        .hero-text {
-            margin-left: 20px;
-        }
+    .hero-text {
+        margin-left: 20px;
+    }
 
+    h1 {
+     font-size: 100px;
+    }
     
+    p {
+     font-size: 40px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+    .information p {
+        font-size: 40px;
+    }
+
+    .project-card {
+        width: 500px;
+        height: 800px;
+    }
+
+    .project-card p {
+        font-size: 40px;
+    }
+
+    .github-button {
+        font-size: 40px;
+    }
+    .github-button svg {
+        display: none;
+    }
+
+    .license {
+        font-size: 40px;
+    }
 
 }
 
-@media only screen and (max-width: 815px) {
+
+/* @media only screen and (max-width: 815px) {
     .socials {
         display: flex;
         margin-bottom: 10px;
@@ -212,15 +246,15 @@ p {
         flex-wrap: wrap;
         align-items: center;
         /* margin-left: 5px; */
-    }
+    /* } */
 
-    h1 {
-        font-size: 50px;
-    }
+    /* h1 {
+        font-size: 50px; */
+    /* }
     .sub-section p {
         font-size: 20px;
-        }
-}
+        } */
+/* } */ 
 
 .project-image {
     margin-top: 25px;
