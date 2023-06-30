@@ -86,6 +86,7 @@ p {
     flex-direction: row;
     align-items: baseline;
     width: calc(100% - 80px);
+    margin-bottom: 20px;
 }
 
 .socials {
