@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Age in Days Calculator by Diana Voronova</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      li.tag {
+        display: inline-block;
+        width: auto;
+      }
+      li > svg {
+        width: 16px;
+        vertical-align: text-top;
+      }
+      a {
+        text-decoration: none;
+      }
+      .btn-primary {
+        background-color: #8da4ee;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #9db0ee;
+      }
+      :root {
+        --bs-body-color: white;
+        --bs-body-bg: #1c1d25;
+        /* --bs-secondary-color */
+        /* --bs-secondary-bg */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mb-4">
+        <h1><a href="./index.html">Diana Voronova</a> / Age In Days Calculator</h1>
+      </div>
+      <main class="row fs-3">
+        <div class="col">
+          <form class="card h-100" style="background-color: #8da4ee">
+            <div class="card-body">
+              <h5 class="card-title fs-3">
+                Choose your date of birth to count days of your life:
+              </h5>
+              <input
+                class="date"
+                type="date"
+                name="dateOfBirth"
+                id="dateOfBirth"
+                onchange="ageInDays()"
+                data-test="date-input"
+              />
+              <p>
+                You are
+                <output
+                  type="number"
+                  name="result"
+                  id="result"
+                  for="dateOfBirth"
+                  data-test="result"
+                  >0</output
+                >
+                days old
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="col">
+          <div class="card h-100" style="border: none">
+            <div class="card-body">
+              I've made this as my first project for learning Javascript. Without
+              tutorials, just implementing what I knew. It was 160 lines of code at first.
+              Then after learning more I remade it to 40 lines of efficient code.
+              <br />#arrays #objects #datePrototype
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./assets/age-in-days.js"></script>
+  </body>
+</html>
