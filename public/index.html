@@ -80,15 +80,21 @@
         <i class="fa-solid fa-link fa-fw"></i>
         Links:
         <div class="form-control">
-          <a type="button" class="btn btn-primary" href="mailto:hanwi1994@gmail.com">
+          <a type="button" class="btn btn-primary" href="mailto:hanwi1994@gmail.com" data-cy="mail">
             <i class="fa-solid fa-envelope"></i>
             Email
           </a>
-          <a type="button" class="btn btn-primary" href="./assets/cv.pdf">
+          <a type="button" class="btn btn-primary" href="./assets/cv.pdf" data-cy="cv">
             <i class="fa-solid fa-briefcase"></i>
             CV
           </a>
-          <a type="button" class="btn btn-primary" href="https://www.linkedin.com/in/diana-voronova/" target="_blank">
+          <a
+            type="button"
+            class="btn btn-primary"
+            href="https://www.linkedin.com/in/diana-voronova/"
+            target="_blank"
+            data-cy="linkedin"
+          >
             <i class="fa-brands fa-linkedin"></i>
             LinkedIn
           </a>
@@ -97,11 +103,12 @@
             class="btn btn-primary"
             href="https://github.com/DianaLeit?tab=repositories/"
             target="_blank"
+            data-cy="mail"
           >
             <i class="fa-brands fa-github"></i>
             GitHub
           </a>
-          <a type="button" class="btn btn-primary" href="https://www.instagram.com/di.leit/" target="_blank">
+          <a type="button" class="btn btn-primary" href="https://www.instagram.com/di.leit/" target="_blank" data-cy="insta">
             <i class="fa-brands fa-instagram"></i>
             Instagram
           </a>
@@ -201,7 +208,7 @@
 
       <main class="row row-cols-xl-4 row-cols-xl-3 justify-content-center">
         <article class="col">
-          <div class="card h-100">
+          <div class="card h-100" data-cy="project-1">
             <div class="card-body">
               <h5 class="card-title">UITAP</h5>
               <p class="card-text">My Cypress solutions for UI Test Automation Playground on Github repository.</p>
@@ -215,7 +222,7 @@
           </div>
         </article>
         <article class="col">
-          <div class="card h-100">
+          <div class="card h-100" data-cy="project-2">
             <div class="card-body">
               <h5 class="card-title">Age In Days Calculator</h5>
               <p class="card-text">
@@ -236,7 +243,7 @@
           </div>
         </article>
         <article class="col">
-          <div class="card h-100">
+          <div class="card h-100" data-cy="project-3">
             <div class="card-body">
               <h5 class="card-title">This Website</h5>
               <p class="card-text">Covered by Cypress tests. Check the link below.</p>
