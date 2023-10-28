@@ -19,7 +19,8 @@
     />
 
     <style>
-      li.tag {
+      li.tag,
+      a.cert {
         display: inline-block;
         width: auto;
       }
@@ -34,7 +35,8 @@
         background-color: #8da4ee;
         border: none;
       }
-      .btn-primary:hover {
+      .btn-primary:hover,
+      a.cert:hover {
         background-color: #9db0ee;
       }
       :root {
@@ -163,7 +165,7 @@
         </div>
       </div>
 
-      <div class="mb-3 row">
+      <div class="row">
         <div class="col">
           <i class="fa-solid fa-wrench fa-fw"></i>
           Secondary skills:
@@ -237,6 +239,65 @@
         </div>
       </div>
 
+      <div class="mb-3 row">
+        <div class="col">
+          <i class="fa-solid fa-check-double fa-fw"></i>
+          Certificates:
+          <div class="form-control">
+            <a class="form-control cert" href="./istqb.pdf" target="_blank"> ISTQB Foundation Level </a>
+            <a
+              class="form-control cert"
+              href="https://staging.testdome.com/certificates/6055f09b8cb64bb59b482cabcbb8b623"
+              target="_blank"
+            >
+              Web Testing
+            </a>
+            <a
+              class="form-control cert"
+              href="https://coursera.org/share/d5d6ea1eda8eb7281b7c4c2851cea827"
+              target="_blank"
+            >
+              Software Testing
+            </a>
+            <a
+              class="form-control cert"
+              href="https://www.testdome.com/certificates/62c974008999455aac98326e4d463c9f"
+              target="_blank"
+            >
+              Software Quality Assurance
+            </a>
+            <a
+              class="form-control cert"
+              href="https://badgr.com/public/assertions/NB_DwqmTSBO62-RFWp8tig?identity__email=hanwi1994@gmail.com"
+              target="_blank"
+            >
+              Postman API Fundamentals
+            </a>
+            <a
+              class="form-control cert"
+              href="https://staging.testdome.com/certificates/9d046f6ebc364ca0b5e4446d3c1a739b"
+              target="_blank"
+            >
+              SQL
+            </a>
+            <a
+              class="form-control cert"
+              href="https://staging.testdome.com/certificates/cfbe72d8c88b405cb6aa825ca0bd37c7"
+              target="_blank"
+            >
+              Python
+            </a>
+            <a
+              class="form-control cert"
+              href="https://www.testdome.com/certificates/1400838ef605437bb4c9031c1d33e517"
+              target="_blank"
+            >
+              JavaScript
+            </a>
+          </div>
+        </div>
+      </div>
+
       <main class="row row-cols-xl-4 row-cols-xl-3 justify-content-center">
         <article class="col">
           <div class="card h-100" data-cy="project-1">
@@ -277,9 +338,7 @@
           <div class="card h-100" data-cy="project-3">
             <div class="card-body">
               <h5 class="card-title">codewars-solved</h5>
-              <p class="card-text">
-                My collection of solutions for Codewars katas.
-              </p>
+              <p class="card-text">My collection of solutions for Codewars katas.</p>
             </div>
             <div class="card-footer text-body-secondary">
               <a href="https://github.com/DianaLeit/codewars-solved" class="btn btn-primary" target="_blank">
